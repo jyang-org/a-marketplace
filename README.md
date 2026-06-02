@@ -68,9 +68,8 @@ Fork this repo into your GitHub org, edit it to match your stack and conventions
 1. Fork this repository to your team's GitHub organization (for example, `your-org/cursor-fundamentals`).
 2. Clone the fork locally and edit plugin contents (`rules/`, `skills/`, `agents/`, `mcp.json`) to reflect your stack, conventions, and tooling. Remove plugins you don't want.
 3. If you rename the marketplace, update both `name` (lowercase kebab-case) and `displayName` in [.cursor-plugin/marketplace.json](.cursor-plugin/marketplace.json).
-4. Run `node scripts/validate-template.mjs` to catch manifest, frontmatter, and path issues before publishing.
-5. Commit and push. If the repo is private, grant the Cursor GitHub app read access when prompted.
-6. In Cursor, go to **Dashboard → Settings → Plugins → Import**, paste your fork's URL, pick access groups, and mark each plugin **Required** or **Optional**.
+4. Commit and push. If the repo is private, grant the Cursor GitHub app read access when prompted.
+5. In Cursor, go to **Dashboard → Settings → Plugins → Import**, paste your fork's URL, pick access groups, and mark each plugin **Required** or **Optional**.
 
 **Benefits**
 
@@ -80,7 +79,7 @@ Fork this repo into your GitHub org, edit it to match your stack and conventions
 
 **Risks**
 
-- You own maintenance: merging upstream updates, validating manifests, and keeping plugin docs aligned with reality.
+- You own maintenance: merging upstream updates, reviewing plugin manifests and referenced paths before publishing, and keeping plugin docs aligned with reality.
 - Public forks are public on GitHub; if your plugins reference internal systems, use a private fork (or "Use this template") and grant the Cursor GitHub app access.
 
 **Best for:** any team that wants to encode its own conventions, credentials, or tool choices — which is most teams once they move past evaluation.
